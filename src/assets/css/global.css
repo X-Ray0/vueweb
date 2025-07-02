@@ -1,0 +1,90 @@
+/* src/assets/css/global.css */
+
+/* 全局重置 */
+* {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基础布局 */
+.global-header {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* 标题和导航容器 */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* 标题样式 */
+.header-title {
+    max-width: 1200px;
+    margin: 0;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+/* 导航栏 */
+.main-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* 移动端适配 (<768px) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        /* 强制垂直排列 */
+        align-items: stretch;
+        /* 子元素撑满容器宽度 */
+        gap: 1rem;
+    }
+
+    .header-title {
+        text-align: center;
+        /* 标题居中 */
+        width: 100%;
+        /* 强制占满容器 */
+    }
+
+    .header-name {
+        width: 100%;
+        /* 导航栏占满宽度 */
+        display: flex;
+        flex-wrap: wrap;
+        /* 允许导航项换行 */
+        justify-content: center;
+        /* 导航项居中 */
+        gap: 1rem;
+    }
+
+    .main-nav {
+        width: 100%;
+        /* 导航栏占满宽度 */
+        display: flex;
+        flex-wrap: wrap;
+        /* 允许导航项换行 */
+        justify-content: center;
+        /* 导航项居中 */
+        gap: 1rem;
+
+
+    }
+}
