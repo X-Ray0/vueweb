@@ -6,27 +6,27 @@
 
     <div class="projects">
       <div class="project-card">
-        <img src="@/assets/research_img.png" alt="Research project" class="project-image">
+        <img src="@/assets/1.png" alt="Research project" class="project-image">
         <div class="project-info">
           <h3>{{ $t('research1.minititles1') }}</h3>
+          <p>{{ $t('research1.description1') }}</p>
           <div class="project-period">{{ $t('research1.periods') }}</div>
-          <p>{{ $t('research1.descriptions')[index] }}</p>
         </div>
       </div>
       <div class="project-card">
-        <img src="@/assets/research_img.png" alt="Research project" class="project-image">
+        <img src="@/assets/2.png" alt="Research project" class="project-image">
         <div class="project-info">
           <h3>{{ $t('research1.minititles2') }}</h3>
+          <p>{{ $t('research1.description2') }}</p>
           <div class="project-period">{{ $t('research1.periods') }}</div>
-          <p>{{ $t('research1.descriptions')[index] }}</p>
         </div>
       </div>
       <div class="project-card">
-        <img src="@/assets/research_img.png" alt="Research project" class="project-image">
+        <img src="@/assets/3.png" alt="Research project" class="project-image">
         <div class="project-info">
           <h3>{{ $t('research1.minititles3') }}</h3>
+          <p>{{ $t('research1.description3') }}</p>
           <div class="project-period">{{ $t('research1.periods') }}</div>
-          <p>{{ $t('research1.descriptions')[index] }}</p>
         </div>
       </div>
     </div>
@@ -34,31 +34,31 @@
     <h2 class="title">{{ $t('research2.title') }}</h2>
     <div class="projects">
       <div class="project-card">
-        <img src="@/assets/research_img.png" alt="Research project" class="project-image">
+        <img src="@/assets/4.png" alt="Research project" class="project-image">
         <div class="project-info">
           <h3>{{ $t('research2.minititles1') }}</h3>
+          <p>{{ $t('research2.description1')}}</p>
           <div class="project-period">{{ $t('research2.periods') }}</div>
-          <p>{{ $t('research2.descriptions')[index] }}</p>
         </div>
       </div>
       <div class="project-card">
-        <img src="@/assets/research_img.png" alt="Research project" class="project-image">
+        <img src="@/assets/5.png" alt="Research project" class="project-image">
         <div class="project-info">
           <h3>{{ $t('research2.minititles2') }}</h3>
+          <p>{{ $t('research2.description2')}}</p>
           <div class="project-period">{{ $t('research2.periods') }}</div>
-          <p>{{ $t('research2.descriptions')[index] }}</p>
         </div>
-      </div>      
+      </div>
     </div>
 
-    <h2 class="title">{{ $t('research2.title') }}</h2>
+    <h2 class="title">{{ $t('research3.title') }}</h2>
     <div class="projects">
       <div class="project-card">
-        <img src="@/assets/research_img.png" alt="Research project" class="project-image">
+        <img src="@/assets/6.png" alt="Research project" class="project-image">
         <div class="project-info">
           <h3>{{ $t('research3.minititles1') }}</h3>
+          <p>{{ $t('research3.description1')}}</p>
           <div class="project-period">{{ $t('research3.periods') }}</div>
-          <p>{{ $t('research3.descriptions')[index] }}</p>
         </div>
       </div>
     </div>
@@ -117,13 +117,14 @@ h1 {
 
 .project-image {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 1840/880;
+  object-fit: contain;
   border-bottom: 1px solid #eee;
 }
 
 .project-info {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .project-info h3 {
@@ -136,15 +137,17 @@ h1 {
   background-color: #f9f2e9;
   color: #8b4513;
   display: inline-block;
-  padding: 3px 10px;
+  padding: 1px 1px;
   border-radius: 3px;
   font-size: 0.9rem;
   margin-bottom: 12px;
 }
 
 .project-info p {
-  color: #555;
-  line-height: 1.6;
+  color: #8b4513;
+  line-height: 1;
+  font-size: 12px;
+  padding: 0 0 10px 0;
 }
 
 .other-areas {

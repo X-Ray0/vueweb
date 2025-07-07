@@ -9,10 +9,13 @@
         </div>
 
         <div class="intro-section">
+          <!-- <h1>{{ $t('home.greeting') }} <span class="name">{{ $t('home.name') }}</span></h1> -->
           <p>{{ $t('home.intro1') }}</p>
+
         </div>
         <div>
           <p>{{ $t('home.researchFocus') }}</p>
+          <!-- <p class="tagline">{{ $t('home.tagline') }}</p> -->
         </div>
 
         <div class="action-section">
@@ -28,7 +31,9 @@
         </div>
 
         <div class="action-section">
-          <p v-html="$t('home.contact')"> </p>
+          <!-- <a href="#">{{ $t('home.cvLink') }}</a> -->
+          <p>{{ $t('home.contact') }} </p>
+          <!-- <a href="mailto:cuisl@hnu.edu.cn">cuisl@hnu.edu.cn</a> -->
         </div>
       </div>
 
@@ -47,7 +52,7 @@
         </div>
         <div>
           <p class="topic">{{ $t('home.topics') }}</p>
-        </div> 
+        </div>
       </div>
     </div>
   </div>
@@ -137,11 +142,13 @@ a:hover {
 
 .photo-container {
   display: grid;
+  /* position: relative; */
   place-items: center;
   margin-bottom: 10px;
 }
 
 .photo-container img {
+  /* position: middle; */
   width: 50%;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
